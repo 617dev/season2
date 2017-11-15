@@ -1,0 +1,58 @@
+<snippet>
+    <content><![CDATA[/**
+ * $1
+ *
+ * ${2:Description of component}
+ */
+
+//externals
+import React, {
+	${3:PureComponent}
+} from 'react'
+import {
+	arrayOf,
+	bool,
+	func,
+	number,
+	shape,
+	string
+} from 'prop-types'
+
+//components
+
+//utils
+
+//constants
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends $3 {
+	static propTypes = {}
+	static defaultProps = {}
+
+	state = {}
+
+	componentWillMount() {}
+	componentDidMount() {}
+
+	componentWillReceiveProps(nextProps) {}
+	shouldComponentUpdate(nextProps, nextState) {
+		return true
+	}
+
+	componentWillUpdate(nextProps, nextState) {}
+	componentDidUpdate(prevProps, prevState) {}
+
+	componentWillUnmount() {}
+
+	render() {
+		return (
+			$0
+		)
+	}
+}
+
+export default $1
+]]></content>
+    <tabTrigger>rcc</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>React: class component with prop-types</description>
+</snippet>
