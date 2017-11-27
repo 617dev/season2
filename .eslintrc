@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "default-case": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "indent": ["error", "tab"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "max-len": ["error", 120, 4, {ignoreComments: true}],
+    "no-tabs": "off",
+    "no-unused-vars": 1,
+    "quote-props": ["error", "consistent-as-needed"],
+    "quotes": "off",
+    "radix": "off",
+    "react/boolean-prop-naming": "error",
+    "react/forbid-component-props": ["error", {forbid: ["className", "style"]}],
+    "react/jsx-indent": ["error", "tab"],
+    "react/jsx-indent-props": ["error", "tab"],
+    "react/jsx-no-bind": ["error", {"ignoreRefs": true, "allowArrowFunctions": false, "allowBind": false}],
+    "react/jsx-sort-props": ["error",{"ignoreCase": true,"callbacksLast": false,"shorthandFirst": false,"shorthandLast": false,"noSortAlphabetically": false,"reservedFirst": true}],
+    "react/no-direct-mutation-state": "error",
+    "react/sort-prop-types": ["error", {"ignoreCase": true, "callbacksLast": false, "requiredFirst": false}],
+    "semi": ["error", "never"],
+    "space-infix-ops": "off"
+  }
+}
